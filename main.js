@@ -18,11 +18,10 @@ back_buttom.addEventListener(
         if (i>0){
             i-=1;
             next_buttom.className = "image-viewer__button";
-            back_buttom.disabled=false;
+            document.getElementById("display").src = "images/loading.gif"
         } else {
             i=i;
             back_buttom.className = "disabled";
-            back_buttom.disabled=true;
             alert("Subscribe to my channel to see more videos.");
         }
         document.getElementById("display").src = pictures[i];
@@ -41,6 +40,7 @@ next_buttom.addEventListener(
         if (i<pictures.length-1){
             i+=1;
             back_buttom.className = "image-viewer__button";
+            document.getElementById("display").src = "images/loading.gif"
         } else {
             i=i;
             next_buttom.className = "disabled";
