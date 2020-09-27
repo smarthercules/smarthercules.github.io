@@ -17,11 +17,11 @@ back_buttom.addEventListener(
     function(){
         if (i>0){
             i-=1;
+            next_buttom.className = "image-viewer__button";
             back_buttom.disabled=false;
-            document.getElementById("display").src = "images/loading.gif";
-            // alert("alert back"+i);
         } else {
             i=i;
+            back_buttom.className = "disabled";
             back_buttom.disabled=true;
             alert("Subscribe to my channel to see more videos.");
         }
@@ -40,12 +40,10 @@ next_buttom.addEventListener(
     function(){
         if (i<pictures.length-1){
             i+=1;
-            back_buttom.disabled=false;
-            document.getElementById("display").src = "images/loading.gif";
-            // alert("alert next"+i);
+            back_buttom.className = "image-viewer__button";
         } else {
             i=i;
-            back_buttom.disabled=true;
+            next_buttom.className = "disabled";
             alert("Subscribe to my channel to see more videos.");
         }
         document.getElementById("display").src = pictures[i];
