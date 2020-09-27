@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image Viewer</title>
+        <meta charset="UTF-8">
+        <link
+            rel="stylesheet"
+            type="text/css"
+            media="screen"
+            href="styles.css"
+        />
+    </head>
+    <body>
+        <!-- Try to implement an HTML that looks like the reference example:
+        ./images/screenshot.png  -->
+        <!-- Please use the class names and IDs as defined in styles.css
+         so that the outlook can be the same as the reference. -->
+        <div class="image-viewer__container">
+            <div class="image-viewer__title"><h1>Image Viewer</h1></div>
+            <div class="image-viewer__main">
+                <div class="image-viewer__button ">
+                    <img src="images/back.png" id="previous" alt="back" title="previous picture">
+                </div>
+                <div class="image-viewer__display">
+                    <a href="https://www.youtube.com/watch?v=BQWG9R_0J6U" id="display_link" target="_blank">
+                        <img src="images/How to talk to a deer.jpg" id="display" title="How to talk to a deer" alt="How to talk to a deer">
+                    </a>
+                    <img src="images/loading.gif" alt="loading" id="loading">
+                    <!-- <img src="images/loading.gif" alt="loading" style="z-index:-1"> -->
+                    <div class="image-viewer__display-source-wrapper">
+                        <span>source: </span>
+                        <span><a href="https://www.youtube.com/watch?v=BQWG9R_0J6U" id="source" target="_blank">"https://www.youtube.com/watch?v=BQWG9R_0J6U"</a></span>
+                    </div>
+                </div>
+
+                <div class="image-viewer__button ">
+                    <img src="images/next.png" id="next" alt="next" title="next picture">
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
